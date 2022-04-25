@@ -1,0 +1,28 @@
+// VARIABLES
+
+@import "variables";
+
+// ESTILOS GLOBALES
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: $font;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $dark;
+  overflow-x: hidden;
+}
+
+// IMPORTACIONES PARCIALES 
+
+@import "./scss/navbar.scss";
+
+// RESPONSIVIDAD
+
+@import "responsive";

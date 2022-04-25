@@ -1,0 +1,16 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: "Akshar", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #171717;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
