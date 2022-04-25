@@ -18,7 +18,7 @@ Landing page realizada con HTML, SASS y JavaScript Vanilla.
 
 Mirá la página en funcionamiento haciendo click [aquí](https://diazleonel.github.io/proyecto-real-pcentrix/).
 
-## ¿Como usar la aplicación de forma local? <a name="3"></a>
+## Guía para desarrollo <a name="3"></a>
 
 Este proyecto requiere **[Node.js](https://nodejs.org/)** para su desarrollo.
 
