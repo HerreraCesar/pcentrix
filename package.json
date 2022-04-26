@@ -1,7 +1,7 @@
 {
   "name": "pcentrix",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page realizada con HTML, SASS y JavaScript Vanilla.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +16,13 @@
     "concurrently": "^7.1.0",
     "live-server": "^1.2.1",
     "sass": "^1.50.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiazLeonel/Proyecto-Real-PCentriX.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DiazLeonel/Proyecto-Real-PCentriX/issues"
+  },
+  "homepage": "https://github.com/DiazLeonel/Proyecto-Real-PCentriX#readme"
 }
