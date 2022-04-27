@@ -17,9 +17,19 @@ $blur: 10px;
 
 // TIPOGRAFÍAS
 
-$font: 'Akshar', sans-serif;
-$muli: Muli;
-$inria: Inria Sans;
+$muli: 'Muli';
+
+@font-face {
+    font-family: 'Muli';
+    src: url('/fonts/Muli-Regular.ttf');
+}
+
+$inria: 'Inria Sans';
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('/fonts/InriaSans-Regular.ttf');
+}
 
 // ANCHO PÁGINA
 
