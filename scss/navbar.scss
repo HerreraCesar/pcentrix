@@ -1,11 +1,7 @@
-section {
-    display: flex;
+.nav {
     width: 100vw;
-    height: 100vh;
-}
-
-h1 {
-    color: $primary;
-    margin: auto;
-    font-family: $muli;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }

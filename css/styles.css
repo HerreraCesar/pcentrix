@@ -19,18 +19,83 @@
 body {
   background-color: #04110D;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
-section {
-  display: flex;
+.nav {
   width: 100vw;
-  height: 100vh;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-h1 {
-  color: #29B88D;
-  margin: auto;
-  font-family: "Muli";
+.cover-page {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy, .fix {
+  width: 50vw;
+  height: 70vh;
+  overflow: hidden;
+  border: 1px solid #29B88D;
+}
+.buy p, .buy h2, .fix p, .fix h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 2px #04110D;
+}
+.buy p, .fix p {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.buy h2, .fix h2 {
+  font-size: 36px;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+.buy button, .fix button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bolder;
+  box-shadow: 0px 0px 3px #04110D;
+  font-size: 16px;
+  margin-left: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.buy {
+  background-image: url("../img/computadora.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+  background-color: #29B88D;
+}
+.buy button:hover {
+  background-color: #1A755A;
+  color: #ffffff;
+}
+
+.fix {
+  margin-left: -100px;
+  background-image: url("../img/reparar.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+}
+.fix button {
+  background-color: #29B88D;
+}
+.fix button:hover {
+  background-color: #ffffff;
 }
 
 @font-face {

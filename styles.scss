@@ -17,11 +17,13 @@
 body {
   background-color: $dark;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 // IMPORTACIONES PARCIALES 
 
 @import "./scss/navbar.scss";
+@import "./scss/cover-page.scss";
 
 // RESPONSIVIDAD
 
