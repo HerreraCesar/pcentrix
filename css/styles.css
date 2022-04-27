@@ -1,7 +1,15 @@
+@font-face {
+  font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
+}
 * {
   margin: 0rem;
   padding: 0rem;
-  font-family: Inria Sans;
+  font-family: "Muli";
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -20,8 +28,18 @@ section {
 }
 
 h1 {
-  color: greenyellow;
+  color: #29B88D;
   margin: auto;
+  font-family: "Muli";
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
 }
 
 /*# sourceMappingURL=styles.css.map */
