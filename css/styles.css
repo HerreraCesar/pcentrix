@@ -21,18 +21,145 @@ body {
   overflow-x: hidden;
 }
 
-section {
-  display: flex;
-  width: 100vw;
+.container {
+  width: 100%;
   height: 100vh;
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  color: #29B88D;
-  margin: auto;
+h1, h2, h3, h4, h5 {
+  color: #ffffff;
+}
+
+@font-face {
   font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
+}
+#about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#about .notebook {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#about .notebook img {
+  width: 300px;
+  height: 300px;
+  filter: invert(1);
+}
+#about .data {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#about .data h3 {
+  color: #29B88D;
+  font-size: 24px;
+}
+#about .data h2 {
+  margin: 20px 0px;
+  font-size: 36px;
+}
+#about .data hr {
+  width: 50px;
+  height: 3px;
+  border: none;
+  background-color: #29B88D;
+}
+#about .data .row {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+#about .data .row img {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+#about .data .row div {
+  height: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+#about .data .row div h4 {
+  font-size: 18px;
+}
+#about .data .row div p {
+  color: #777777;
 }
 
+@font-face {
+  font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
+}
+#footer {
+  height: 300px;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
+}
+#navbar {
+  height: 100px;
+  position: fixed;
+  top: 0;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("/fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Inria Sans";
+  src: url("/fonts/InriaSans-Regular.ttf");
+}
 @font-face {
   font-family: "Muli";
   src: url("/fonts/Muli-Regular.ttf");
