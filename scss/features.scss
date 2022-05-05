@@ -1,1 +1,59 @@
 @import "../variables.scss";
+
+#features {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+    span {
+        color: $primary;
+    }
+    .grid {
+        width: 100%;
+        padding: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        gap: 75px;
+        justify-content: center;
+        align-items: center;
+        .card {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50px;
+                height: 50px;
+                background-color: $primary;
+                padding: 10px;
+                border-radius: 50%;
+            }
+            div {
+                margin: 20px 0px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                h5 {
+                    font-size: 18px;
+                    min-width: fit-content;
+                    margin: 0px 20px;
+                }
+                hr {
+                    height: 3px;
+                    width: 50px;
+                    background-color: $primary;
+                    border: none;
+                }
+            }
+            p {
+                color: $placeholder;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -23,7 +23,7 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   border: solid 1px red;
   display: flex;
   justify-content: center;
@@ -110,6 +110,74 @@ h1, h2, h3, h4, h5 {
   font-family: "Inria Sans";
   src: url("/fonts/InriaSans-Regular.ttf");
 }
+#contact {
+  background-color: #222222;
+  min-height: 80vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contact .background {
+  position: absolute;
+  height: 80vh;
+  width: 35vw;
+  background-color: rgb(50, 50, 50);
+  left: 0;
+  z-index: 0;
+}
+#contact .title {
+  z-index: 1;
+}
+#contact .title h2 {
+  font-size: 42px;
+}
+#contact .title span {
+  color: #29B88D;
+}
+#contact .title p {
+  color: #777777;
+  margin-top: 60px;
+  font-weight: 600;
+}
+#contact .form {
+  width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+#contact .form label {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+#contact .form label span {
+  color: #29B88D;
+}
+#contact .form input {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid #29B88D;
+  height: 35px;
+  margin-top: 15px;
+}
+#contact .form .button {
+  background-color: #29B88D;
+  color: #ffffff;
+  font-weight: 600;
+}
+#contact .form div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+#contact .form div span {
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #777777;
+  font-size: 12px;
+}
+
 @font-face {
   font-family: "Muli";
   src: url("/fonts/Muli-Regular.ttf");
@@ -126,6 +194,64 @@ h1, h2, h3, h4, h5 {
   font-family: "Inria Sans";
   src: url("/fonts/InriaSans-Regular.ttf");
 }
+#features {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#features h2 {
+  font-size: 36px;
+  margin-top: 100px;
+}
+#features span {
+  color: #29B88D;
+}
+#features .grid {
+  width: 100%;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  gap: 75px;
+  justify-content: center;
+  align-items: center;
+}
+#features .grid .card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#features .grid .card img {
+  width: 50px;
+  height: 50px;
+  background-color: #29B88D;
+  padding: 10px;
+  border-radius: 50%;
+}
+#features .grid .card div {
+  margin: 20px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#features .grid .card div h5 {
+  font-size: 18px;
+  min-width: fit-content;
+  margin: 0px 20px;
+}
+#features .grid .card div hr {
+  height: 3px;
+  width: 50px;
+  background-color: #29B88D;
+  border: none;
+}
+#features .grid .card p {
+  color: #777777;
+  text-align: center;
+}
+
 @font-face {
   font-family: "Muli";
   src: url("/fonts/Muli-Regular.ttf");
@@ -135,7 +261,7 @@ h1, h2, h3, h4, h5 {
   src: url("/fonts/InriaSans-Regular.ttf");
 }
 #footer {
-  height: 300px;
+  min-height: 300px;
 }
 
 @font-face {
@@ -147,9 +273,10 @@ h1, h2, h3, h4, h5 {
   src: url("/fonts/InriaSans-Regular.ttf");
 }
 #navbar {
-  height: 100px;
+  min-height: 100px;
   position: fixed;
   top: 0;
+  z-index: 5;
 }
 
 @font-face {
