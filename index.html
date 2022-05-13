@@ -10,9 +10,21 @@
     <title>Pcentrix</title>
   </head>
   <body>
-    <nav id="navbar" class="container">
-      <h2>Barra navegación</h2>
-    </nav>
+    <header id="navbar">
+      <div class="iconName">
+        <a href="./index.html">PCentrix</a>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="#cover-page">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#features">Computadoras armadas</a></li>
+            <li><a href="#contact">Contactanos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <section id="cover-page" class="container">
       <h1>Portada</h1>
     </section>
@@ -24,27 +36,27 @@
         <h3>Nosotros</h3>
         <h2>Especialistas <br/> en servicio técnico</h2>
         <hr>
-        <div class="row">
+        <a href="#contact" class="row">
           <img src="./assets/svg/iconos/Icono reparar-01.svg" alt="">
           <div>
             <h4>Reparación</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-        </div>
-        <div class="row">
+        </a>
+        <a href="#contact" class="row">
           <img src="./assets/svg/iconos/Icono upgrade-01.svg" alt="">
           <div>
             <h4>Repotencia</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-        </div>
-        <div class="row">
+        </a>
+        <a href="#contact" class="row">
           <img src="./assets/svg/escoba.svg" alt="">
           <div>
             <h4>Mantenimiento</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-        </div>
+        </a>
       </div>
     </section>
     <section id="features" class="container">
@@ -99,14 +111,30 @@
       </div>
       <div class="form">
         <label for=""><span>*</span>Nombre</label>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="" required>
         <label for=""><span>*</span>Correo electrónico</label>
-        <input type="text" name="" id="">
-        <input type="submit" name="Enviar" id="" class="button">
+        <input type="text" name="" id="" required>
+        <label for=""><span>*</span>Teléfono</label>
+        <input type="tel" name="" id="" required>
+        <!-- <datalist id="codes">
+          <option value="+51">
+          <option value="+54">
+          <option value="+56">
+        </datalist> -->
+        <label for=""><span>*</span>Área</label>
+        <select name="select" required>
+          <option value="value1" selected>Value 1</option>
+          <option value="value2">Value 2</option>
+          <option value="value3">Value 3</option>
+        </select>
+        <label for=""><span>*</span>Mensaje</label>
+        <textarea name="" id="" cols="" rows="" required></textarea>
         <div>
           <input type="checkbox" class="checkbox">
           <span>Estoy de acuerdo con las políticas de privacidad</span>
         </div>
+        <input type="submit" name="Enviar" id="" class="button">
+        
       </div>
     </section>
     <footer id="footer" class="container">

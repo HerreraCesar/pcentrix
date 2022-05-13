@@ -14,14 +14,19 @@
   scroll-behavior: smooth;
 }
 
+*::selection {
+  background-color: $secondary;
+}
+
 body {
   background-color: $dark;
   overflow-x: hidden;
 }
 
 .container {
+  margin-top: $navBarHeight;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - $navBarHeight);
   border: solid 1px red;
   display: flex;
   justify-content: center;

@@ -2,14 +2,13 @@
 
 #contact {
     background-color: $shadow;
-    min-height: 80vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
     .background {
         position: absolute;
-        height: 80vh;
+        height: calc(100vh - 100px);
         width: 35vw;
         background-color: rgb(50, 50, 50);
         left: 0;
@@ -42,17 +41,25 @@
                 color: $primary;
             }
         }
-        input {
+        input, textarea {
             background-color: transparent;
             border-radius: $curve;
             border: 2px solid $primary;
             height: 35px;
             margin-top: 15px;
+            color: $light;
+            padding-left: 10px;
+        }
+        input,select,textarea:focus-visible {
+            outline: none;
         }
         .button {
             background-color: $primary;
             color: $light;
             font-weight: 600;
+        }
+        .button:hover {
+            background-color: $secondary;
         }
         div {
             display: flex;
@@ -64,6 +71,24 @@
                 color: $placeholder;
                 font-size: 12px;
             }
+        }
+        select {
+            background-color: transparent;
+            border-radius: $curve;
+            border: 2px solid $primary;
+            height: 35px;
+            margin-top: 15px;
+            color: $light;
+            padding-left: 10px;
+            option {
+                color: $dark;
+            }
+        }
+        textarea {
+            max-width: 300px;
+            min-width: 300px;
+            min-height: 100px;
+            padding-top: 5px;
         }
     }
 }

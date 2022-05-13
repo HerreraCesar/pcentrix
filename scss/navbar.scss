@@ -1,8 +1,61 @@
 @import "../variables.scss";
 
 #navbar {
+    top: 0;
+    margin-top: 0;
     min-height: 100px;
     position: fixed;
-    top: 0;
     z-index: 5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: $dark; 
+    
+
+    .iconName {
+        margin-left: 100px;
+        a {
+            font-family: $muli;
+            font-size: 36px;
+            font-weight: bold;
+            color: $light;
+        }
+    }
+
+    .nav {
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-right: 50px;
+
+                &:last-child {
+                    border: 2px solid $secondary;
+                    border-radius: $curve;
+                    margin-right: 100px;
+                    padding: 7px 20px;
+
+                    &:hover {
+                        background-color: $secondary;
+                    }
+                }
+
+                a {
+                    color: $light;
+                    font-family: $muli;
+                    font-size: 18px;
+                    font-weight: 200;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                
+
+            }
+        }
+    }
 }
