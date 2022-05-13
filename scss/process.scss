@@ -44,14 +44,19 @@
         }
 
     }
-    .process--svg{
+
+    .process--svg {
         width: 100%;
-        .process-1{
+
+        .process-1 {
             position: relative;
-            right: 500px;
-            top: 80px;
+            right: 400px;
+            top: 120px;
             text-align: center;
-            span{
+            width: auto;
+
+
+            span {
                 position: relative;
                 bottom: 20px;
                 right: 50px;
@@ -62,13 +67,29 @@
                 font-size: 1.7rem;
                 font-weight: bold;
                 border-radius: 50%;
+                width: auto;
+
             }
         }
-        .process-2{
+
+        .process__1 {
+            position: relative;
+            left: 495px;
+            width: auto;
+
+
+            img {
+                width: 170px;
+            }
+        }
+
+        .process-2 {
             position: relative;
             bottom: 128px;
             text-align: center;
-            span{
+            width: auto;
+
+            span {
                 position: relative;
                 bottom: 20px;
                 right: 50px;
@@ -81,12 +102,65 @@
                 border-radius: 50%;
             }
         }
-        .process-3{
+
+        .process__2 {
             position: relative;
-            bottom: 336px;
-            left: 500px;
+            left: 934px;
+            bottom: 240px;
+            transform: rotateX(180deg);
+            width: auto;
+
+
+            img {
+                width: 170px;
+            }
+        }
+
+        .process-3 {
+            position: relative;
+            bottom: 370px;
+            left: 420px;
             text-align: center;
-            span{
+            width: auto;
+
+            span {
+                position: relative;
+                bottom: 20px;
+                left: 160px;
+                background-color: $light;
+                color: $primary;
+                padding: 0px 8px;
+                font-family: $muli;
+                font-size: 1.7rem;
+                font-weight: bold;
+                border-radius: 50%;
+            }
+
+            img {
+                position: relative;
+                right: 20px;
+            }
+        }
+
+        .process__3 {
+            position: relative;
+            left: 1150px;
+            bottom: 350px;
+            width: auto;
+
+            img {
+                width: 70px;
+            }
+        }
+
+        .process-4 {
+            position: relative;
+            bottom: 430px;
+            left: 210px;
+            text-align: center;
+            width: auto;
+
+            span {
                 position: relative;
                 bottom: 20px;
                 right: 50px;
@@ -99,30 +173,26 @@
                 border-radius: 50%;
             }
         }
-        .process-4{
+
+        .process__4 {
             position: relative;
-            bottom: 150px;
-            left: 250px;
-            text-align: center;
-            span{
-                position: relative;
-                bottom: 20px;
-                right: 50px;
-                background-color: $light;
-                color: $primary;
-                padding: 0px 8px;
-                font-family: $muli;
-                font-size: 1.7rem;
-                font-weight: bold;
-                border-radius: 50%;
+            left: 695px;
+            bottom: 550px;
+            width: auto;
+
+            img {
+                width: 170px;
             }
         }
-        .process-5{
+
+        .process-5 {
             position: relative;
-            bottom: 330px;
-            right: 250px;
+            bottom: 665px;
+            right: 230px;
             text-align: center;
-            span{
+            width: auto;
+
+            span {
                 position: relative;
                 bottom: 20px;
                 right: 50px;

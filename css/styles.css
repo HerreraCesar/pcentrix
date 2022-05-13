@@ -361,9 +361,10 @@ h1, h2, h3, h4, h5 {
 }
 #process .process--svg .process-1 {
   position: relative;
-  right: 500px;
-  top: 80px;
+  right: 400px;
+  top: 120px;
   text-align: center;
+  width: auto;
 }
 #process .process--svg .process-1 span {
   position: relative;
@@ -376,11 +377,21 @@ h1, h2, h3, h4, h5 {
   font-size: 1.7rem;
   font-weight: bold;
   border-radius: 50%;
+  width: auto;
+}
+#process .process--svg .process__1 {
+  position: relative;
+  left: 495px;
+  width: auto;
+}
+#process .process--svg .process__1 img {
+  width: 170px;
 }
 #process .process--svg .process-2 {
   position: relative;
   bottom: 128px;
   text-align: center;
+  width: auto;
 }
 #process .process--svg .process-2 span {
   position: relative;
@@ -394,16 +405,27 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
   border-radius: 50%;
 }
+#process .process--svg .process__2 {
+  position: relative;
+  left: 934px;
+  bottom: 240px;
+  transform: rotateX(180deg);
+  width: auto;
+}
+#process .process--svg .process__2 img {
+  width: 170px;
+}
 #process .process--svg .process-3 {
   position: relative;
-  bottom: 336px;
-  left: 500px;
+  bottom: 370px;
+  left: 420px;
   text-align: center;
+  width: auto;
 }
 #process .process--svg .process-3 span {
   position: relative;
   bottom: 20px;
-  right: 50px;
+  left: 160px;
   background-color: #ffffff;
   color: #29B88D;
   padding: 0px 8px;
@@ -412,11 +434,25 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
   border-radius: 50%;
 }
+#process .process--svg .process-3 img {
+  position: relative;
+  right: 20px;
+}
+#process .process--svg .process__3 {
+  position: relative;
+  left: 1150px;
+  bottom: 350px;
+  width: auto;
+}
+#process .process--svg .process__3 img {
+  width: 70px;
+}
 #process .process--svg .process-4 {
   position: relative;
-  bottom: 150px;
-  left: 250px;
+  bottom: 430px;
+  left: 210px;
   text-align: center;
+  width: auto;
 }
 #process .process--svg .process-4 span {
   position: relative;
@@ -430,11 +466,21 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
   border-radius: 50%;
 }
+#process .process--svg .process__4 {
+  position: relative;
+  left: 695px;
+  bottom: 550px;
+  width: auto;
+}
+#process .process--svg .process__4 img {
+  width: 170px;
+}
 #process .process--svg .process-5 {
   position: relative;
-  bottom: 330px;
-  right: 250px;
+  bottom: 665px;
+  right: 230px;
   text-align: center;
+  width: auto;
 }
 #process .process--svg .process-5 span {
   position: relative;
