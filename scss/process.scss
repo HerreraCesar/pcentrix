@@ -1,1 +1,207 @@
 @import "../variables.scss";
+
+#process {
+    /* height: 850px; */
+    color: #fff;
+    /* width: 100%; */
+    /* min-height: 100vh; */
+    max-height: calc(100vh - $navBarHeight);
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 120px;
+    }
+
+    .text-process {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .titleProcess {
+            font-family: $muli;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .day {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin-top: 20px;
+            color: rgba(204, 204, 204, 0.856);
+
+            .circle {
+                height: 10px;
+                width: 10px;
+                background: $primary;
+                border-radius: 50%;
+                margin: 5px 10px 0 0;
+            }
+        }
+
+    }
+
+    .process--svg {
+        width: 100%;
+
+        .process-1 {
+            position: relative;
+            right: 400px;
+            top: 120px;
+            text-align: center;
+            width: auto;
+
+
+            span {
+                position: relative;
+                bottom: 20px;
+                right: 50px;
+                background-color: $light;
+                color: $primary;
+                padding: 0px 8px;
+                font-family: $muli;
+                font-size: 1.7rem;
+                font-weight: bold;
+                border-radius: 50%;
+                width: auto;
+
+            }
+        }
+
+        .process__1 {
+            position: relative;
+            left: 495px;
+            width: auto;
+
+
+            img {
+                width: 170px;
+            }
+        }
+
+        .process-2 {
+            position: relative;
+            bottom: 128px;
+            text-align: center;
+            width: auto;
+
+            span {
+                position: relative;
+                bottom: 20px;
+                right: 50px;
+                background-color: $light;
+                color: $primary;
+                padding: 0px 8px;
+                font-family: $muli;
+                font-size: 1.7rem;
+                font-weight: bold;
+                border-radius: 50%;
+            }
+        }
+
+        .process__2 {
+            position: relative;
+            left: 934px;
+            bottom: 240px;
+            transform: rotateX(180deg);
+            width: auto;
+
+
+            img {
+                width: 170px;
+            }
+        }
+
+        .process-3 {
+            position: relative;
+            bottom: 370px;
+            left: 420px;
+            text-align: center;
+            width: auto;
+
+            span {
+                position: relative;
+                bottom: 20px;
+                left: 160px;
+                background-color: $light;
+                color: $primary;
+                padding: 0px 8px;
+                font-family: $muli;
+                font-size: 1.7rem;
+                font-weight: bold;
+                border-radius: 50%;
+            }
+
+            img {
+                position: relative;
+                right: 20px;
+            }
+        }
+
+        .process__3 {
+            position: relative;
+            left: 1150px;
+            bottom: 350px;
+            width: auto;
+
+            img {
+                width: 70px;
+            }
+        }
+
+        .process-4 {
+            position: relative;
+            bottom: 430px;
+            left: 210px;
+            text-align: center;
+            width: auto;
+
+            span {
+                position: relative;
+                bottom: 20px;
+                right: 50px;
+                background-color: $light;
+                color: $primary;
+                padding: 0px 8px;
+                font-family: $muli;
+                font-size: 1.7rem;
+                font-weight: bold;
+                border-radius: 50%;
+            }
+        }
+
+        .process__4 {
+            position: relative;
+            left: 695px;
+            bottom: 550px;
+            width: auto;
+
+            img {
+                width: 170px;
+            }
+        }
+
+        .process-5 {
+            position: relative;
+            bottom: 665px;
+            right: 230px;
+            text-align: center;
+            width: auto;
+
+            span {
+                position: relative;
+                bottom: 20px;
+                right: 50px;
+                background-color: $light;
+                color: $primary;
+                padding: 0px 8px;
+                font-family: $muli;
+                font-size: 1.7rem;
+                font-weight: bold;
+                border-radius: 50%;
+            }
+        }
+    }
+}

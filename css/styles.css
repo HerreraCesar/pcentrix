@@ -315,7 +315,6 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   background-color: #04110D;
 }
 #navbar .iconName {
@@ -361,6 +360,182 @@ h1, h2, h3, h4, h5 {
   font-family: "Inria Sans";
   src: url("/fonts/InriaSans-Regular.ttf");
 }
+#process {
+  /* height: 850px; */
+  color: #fff;
+  /* width: 100%; */
+  /* min-height: 100vh; */
+  max-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+}
+#process img {
+  width: 120px;
+}
+#process .text-process {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#process .text-process .titleProcess {
+  font-family: "Muli";
+  font-size: 2rem;
+  font-weight: bold;
+}
+#process .text-process .day {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+  color: rgba(204, 204, 204, 0.856);
+}
+#process .text-process .day .circle {
+  height: 10px;
+  width: 10px;
+  background: #29B88D;
+  border-radius: 50%;
+  margin: 5px 10px 0 0;
+}
+#process .process--svg {
+  width: 100%;
+}
+#process .process--svg .process-1 {
+  position: relative;
+  right: 400px;
+  top: 120px;
+  text-align: center;
+  width: auto;
+}
+#process .process--svg .process-1 span {
+  position: relative;
+  bottom: 20px;
+  right: 50px;
+  background-color: #ffffff;
+  color: #29B88D;
+  padding: 0px 8px;
+  font-family: "Muli";
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: auto;
+}
+#process .process--svg .process__1 {
+  position: relative;
+  left: 495px;
+  width: auto;
+}
+#process .process--svg .process__1 img {
+  width: 170px;
+}
+#process .process--svg .process-2 {
+  position: relative;
+  bottom: 128px;
+  text-align: center;
+  width: auto;
+}
+#process .process--svg .process-2 span {
+  position: relative;
+  bottom: 20px;
+  right: 50px;
+  background-color: #ffffff;
+  color: #29B88D;
+  padding: 0px 8px;
+  font-family: "Muli";
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+}
+#process .process--svg .process__2 {
+  position: relative;
+  left: 934px;
+  bottom: 240px;
+  transform: rotateX(180deg);
+  width: auto;
+}
+#process .process--svg .process__2 img {
+  width: 170px;
+}
+#process .process--svg .process-3 {
+  position: relative;
+  bottom: 370px;
+  left: 420px;
+  text-align: center;
+  width: auto;
+}
+#process .process--svg .process-3 span {
+  position: relative;
+  bottom: 20px;
+  left: 160px;
+  background-color: #ffffff;
+  color: #29B88D;
+  padding: 0px 8px;
+  font-family: "Muli";
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+}
+#process .process--svg .process-3 img {
+  position: relative;
+  right: 20px;
+}
+#process .process--svg .process__3 {
+  position: relative;
+  left: 1150px;
+  bottom: 350px;
+  width: auto;
+}
+#process .process--svg .process__3 img {
+  width: 70px;
+}
+#process .process--svg .process-4 {
+  position: relative;
+  bottom: 430px;
+  left: 210px;
+  text-align: center;
+  width: auto;
+}
+#process .process--svg .process-4 span {
+  position: relative;
+  bottom: 20px;
+  right: 50px;
+  background-color: #ffffff;
+  color: #29B88D;
+  padding: 0px 8px;
+  font-family: "Muli";
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+}
+#process .process--svg .process__4 {
+  position: relative;
+  left: 695px;
+  bottom: 550px;
+  width: auto;
+}
+#process .process--svg .process__4 img {
+  width: 170px;
+}
+#process .process--svg .process-5 {
+  position: relative;
+  bottom: 665px;
+  right: 230px;
+  text-align: center;
+  width: auto;
+}
+#process .process--svg .process-5 span {
+  position: relative;
+  bottom: 20px;
+  right: 50px;
+  background-color: #ffffff;
+  color: #29B88D;
+  padding: 0px 8px;
+  font-family: "Muli";
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
 @font-face {
   font-family: "Muli";
   src: url("/fonts/Muli-Regular.ttf");

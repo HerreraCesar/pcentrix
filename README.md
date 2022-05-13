@@ -16,7 +16,7 @@ Landing page realizada con HTML, SASS y JavaScript Vanilla.
 
 ## Demo <a name="2"></a>
 
-Mirá la página en funcionamiento haciendo click [aquí](https://diazleonel.github.io/Proyecto-Real-PCentriX/).
+Mirá la página en funcionamiento haciendo click [aquí](https://pcentrix.netlify.app/).
 
 ## Guía para desarrollo <a name="3"></a>
 
