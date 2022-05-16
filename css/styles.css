@@ -294,20 +294,30 @@ h1, h2, h3, h4, h5, h6, p, span {
   color: #04110D;
 }
 #cover-page .photo {
-  /* img {
+  background: rgb(4, 17, 13);
+  background: radial-gradient(circle, #29B88D 5%, rgba(0, 212, 255, 0) 50%);
+  /* img::after {
+      content: 'Hola que tal';
+      position: relative;
       width: 35vw;
-      transform: rotateY(180deg);
+      height: 20vh;
+      background-color: aqua;
+        box-shadow: inset -150px 0px 75px red;
+        color: aqua;
   } */
-  transform: rotateY(180deg);
-  background-image: url("../assets/reparar.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-#cover-page .photo .image {
-  width: 35vw;
-  height: 50vh;
-  box-shadow: inset -100px 0px 50px #04110D;
+#cover-page .photo img {
+  width: 40vw;
+  transform: rotateY(180deg);
+}
+#cover-page .photo::after {
+  content: "";
+  position: absolute;
+  width: 40vw;
+  height: 27vw;
+  transform: translateX(-100%) rotateY(180deg);
+  box-shadow: inset -150px 0px 75px #04110D;
+  /* background-color: rgba(250, 235, 215, 0.366); */
 }
 
 @font-face {

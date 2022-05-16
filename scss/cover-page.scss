@@ -78,21 +78,31 @@
     
   }
   .photo {
+    background: rgb(4,17,13);
+    background: radial-gradient(circle, $primary 5%, rgba(0,212,255,0) 50%);
     
-      /* img {
-          width: 35vw;
+      img {
+        width: 40vw;
           transform: rotateY(180deg);
-      } */
-      
-        transform: rotateY(180deg);
-        background-image: url('../assets/reparar.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      .image {
-        width: 35vw;
-        height: 50vh;
-        box-shadow: inset -100px 0px 50px $dark;
+
       }
+      /* img::after {
+          content: 'Hola que tal';
+          position: relative;
+          width: 35vw;
+          height: 20vh;
+          background-color: aqua;
+            box-shadow: inset -150px 0px 75px red;
+            color: aqua;
+      } */
   }
+  .photo::after {
+    content: '';
+    position: absolute;
+    width: 40vw;
+    height: 27vw;
+    transform: translateX(-100%) rotateY(180deg);
+      box-shadow: inset -150px 0px 75px $dark;
+      /* background-color: rgba(250, 235, 215, 0.366); */
+}
 }
