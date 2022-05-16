@@ -26,16 +26,16 @@ body {
 }
 
 .container {
-  margin-top: 100px;
+  padding-top: 100px;
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   border: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6, p, span {
   color: #ffffff;
 }
 
@@ -124,14 +124,15 @@ h1, h2, h3, h4, h5 {
 }
 #contact .background {
   position: absolute;
-  height: calc(100vh - 100px);
+  margin-top: -100px;
+  height: 100vh;
   width: 35vw;
   background-color: rgb(50, 50, 50);
   left: 0;
-  z-index: 0;
+  z-index: 1;
 }
 #contact .title {
-  z-index: 1;
+  z-index: 2;
 }
 #contact .title h2 {
   font-size: 42px;
@@ -217,7 +218,96 @@ h1, h2, h3, h4, h5 {
   src: url("/fonts/InriaSans-Regular.ttf");
 }
 #cover-page {
+  display: flex;
+}
+#cover-page .background {
+  width: 100vw;
+  min-height: calc(100vh - 100px);
   background-image: url("../assets/portada landing-02.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+#cover-page .gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background: rgb(4, 17, 13);
+  background: radial-gradient(circle, rgb(4, 17, 13) 50%, rgba(0, 212, 255, 0) 100%);
+}
+#cover-page .message {
+  width: 30vw;
+  margin-right: 80px;
+}
+#cover-page .message h2 {
+  font-size: 30px;
+  color: #29B88D;
+}
+#cover-page .message h1 {
+  font-size: 48px;
+  margin: 20px 0px;
+}
+#cover-page .message p {
+  font-size: 20px;
+}
+#cover-page .message span {
+  color: #29B88D;
+}
+#cover-page .message .buttons {
+  /* width: 320px; */
+  display: flex;
+  flex-flow: row nowrap;
+}
+#cover-page .message button {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 8px 40px;
+  cursor: pointer;
+}
+#cover-page .message button:first-child {
+  background-color: #29B88D;
+  border: solid 3px transparent;
+  color: #04110D;
+  margin-right: 30px;
+}
+#cover-page .message button:first-child:hover {
+  background-color: transparent;
+  border: solid 3px #29B88D;
+  color: #ffffff;
+}
+#cover-page .message button:last-child {
+  background-color: transparent;
+  border: solid 3px #29B88D;
+  color: #ffffff;
+}
+#cover-page .message button:last-child:hover {
+  background-color: #29B88D;
+  border: solid 3px transparent;
+  color: #04110D;
+}
+#cover-page .photo {
+  /* img {
+      width: 35vw;
+      transform: rotateY(180deg);
+  } */
+  transform: rotateY(180deg);
+  background-image: url("../assets/reparar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#cover-page .photo .image {
+  width: 35vw;
+  height: 50vh;
+  box-shadow: inset -100px 0px 50px #04110D;
 }
 
 @font-face {
@@ -365,7 +455,6 @@ h1, h2, h3, h4, h5 {
   color: #fff;
   /* width: 100%; */
   /* min-height: 100vh; */
-  max-height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
 }

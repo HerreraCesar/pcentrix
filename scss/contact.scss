@@ -8,14 +8,15 @@
     align-items: center;
     .background {
         position: absolute;
-        height: calc(100vh - 100px);
+        margin-top: - $navBarHeight;
+        height: 100vh;
         width: 35vw;
         background-color: rgb(50, 50, 50);
         left: 0;
-        z-index: 0;
+        z-index: 1;
     }
     .title {
-        z-index: 1;
+        z-index: 2;
         h2 {
             font-size: 42px;
         }

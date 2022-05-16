@@ -1,5 +1,98 @@
 @import "../variables.scss";
 
 #cover-page {
-    background-image: url('../assets/portada\ landing-02.png');
+  display: flex;
+  .background {
+    width: 100vw;
+    min-height: calc(100vh - $navBarHeight);
+    background-image: url("../assets/portada\ landing-02.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .gradient {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: calc(100vh - $navBarHeight);
+    background: rgb(4,17,13);
+    background: radial-gradient(circle, rgba(4,17,13,1) 50%, rgba(0,212,255,0) 100%);
+  }
+  .message {
+    width: 30vw;
+    margin-right: 80px;
+    
+    h2 {
+        font-size: 30px;
+      color: $primary;
+    }
+    h1 {
+      font-size: 48px;
+      margin: 20px 0px;
+    }
+    p {
+      font-size: 20px;
+    }
+    span {
+      color: $primary;
+    }
+    .buttons {
+        /* width: 320px; */
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    button {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: $curve;
+        padding: 8px 40px;
+      cursor: pointer;
+      &:first-child {
+        background-color: $primary;
+        border: solid 3px transparent;
+        color: $dark;
+        margin-right: 30px;
+        &:hover {
+            background-color: transparent;
+            border: solid 3px $primary;
+            color: $light;
+        }
+      }
+      &:last-child {
+        background-color: transparent;
+        border: solid 3px $primary;
+        color: $light;
+        &:hover {
+            background-color: $primary;
+        border: solid 3px transparent;
+        color: $dark;
+        }
+      }
+    }
+    
+  }
+  .photo {
+    
+      /* img {
+          width: 35vw;
+          transform: rotateY(180deg);
+      } */
+      
+        transform: rotateY(180deg);
+        background-image: url('../assets/reparar.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      .image {
+        width: 35vw;
+        height: 50vh;
+        box-shadow: inset -100px 0px 50px $dark;
+      }
+  }
 }

@@ -24,16 +24,16 @@ body {
 }
 
 .container {
-  margin-top: $navBarHeight;
+  padding-top: $navBarHeight;
   width: 100%;
-  min-height: calc(100vh - $navBarHeight);
+  min-height: calc(100vh);
   border: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6, p, span {
   color: $light
 }
 
