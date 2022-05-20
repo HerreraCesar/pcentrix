@@ -22,6 +22,9 @@
             color: $light;
         }
     }
+    .iconName a:hover {
+        color: $primary;
+    }
 
     .nav {
 
@@ -37,7 +40,10 @@
                     border-radius: $curve;
                     margin-right: 100px;
                     padding: 7px 20px;
-
+                    cursor: pointer;
+                    a:hover {
+                        color: $light;
+                    }
                     &:hover {
                         background-color: $secondary;
                     }
