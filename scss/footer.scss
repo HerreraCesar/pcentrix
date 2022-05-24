@@ -2,4 +2,34 @@
 
 #footer {
     min-height: 300px;
+    display: flex;
+    color: $light;
+    justify-content: space-around;
+    font-size: 1.4rem;
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        gap: 20px;
+    }
+
+    .red-icon {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+
+        img {
+            width: 50px;
+            filter: invert(50%) sepia(8%) saturate(0%) hue-rotate(265deg) brightness(99%) contrast(91%);
+            &:hover {
+                filter: invert(54%) sepia(66%) saturate(418%) hue-rotate(111deg) brightness(96%) contrast(98%);
+            }
+        }
+
+        .imgfilter {
+            width: 40px;
+        }
+    }
 }
