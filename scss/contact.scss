@@ -51,6 +51,10 @@
             color: $light;
             padding-left: 10px;
         }
+        input:last-of-type {
+            cursor: pointer;
+        }
+        
         input,select,textarea:focus-visible {
             outline: none;
         }
@@ -58,6 +62,7 @@
             background-color: $primary;
             color: $light;
             font-weight: 600;
+            cursor: pointer;
         }
         .button:hover {
             background-color: $secondary;

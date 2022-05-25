@@ -29,7 +29,7 @@ body {
   padding-top: 100px;
   width: 100%;
   min-height: 100vh;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,6 +171,9 @@ h1, h2, h3, h4, h5, h6, p, span {
   color: #ffffff;
   padding-left: 10px;
 }
+#contact .form input:last-of-type {
+  cursor: pointer;
+}
 #contact .form input, #contact .form select, #contact .form textarea:focus-visible {
   outline: none;
 }
@@ -178,6 +181,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   background-color: #29B88D;
   color: #ffffff;
   font-weight: 600;
+  cursor: pointer;
 }
 #contact .form .button:hover {
   background-color: #1A755A;
@@ -411,6 +415,48 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 #footer {
   min-height: 300px;
+  display: flex;
+  color: #ffffff;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: flex-start;
+  padding-top: 120px;
+}
+#footer h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+#footer h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+#footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 15px;
+  font-weight: 500;
+}
+#footer .footer-contact p {
+  color: #777777;
+}
+#footer .red-icon {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#footer .red-icon img {
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  filter: invert(50%) sepia(8%) saturate(0%) hue-rotate(265deg) brightness(99%) contrast(91%);
+}
+#footer .red-icon img:hover {
+  filter: invert(54%) sepia(66%) saturate(418%) hue-rotate(111deg) brightness(96%) contrast(98%);
+}
+#footer .red-icon .imgfilter {
+  width: 25px;
 }
 
 @font-face {
@@ -456,8 +502,13 @@ h1, h2, h3, h4, h5, h6, p, span {
   border: 2px solid #1A755A;
   border-radius: 10px;
   margin-right: 100px;
-  padding: 7px 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+}
+#navbar .nav ul li:last-child a {
+  padding: 7px 20px;
 }
 #navbar .nav ul li:last-child a:hover {
   color: #ffffff;
@@ -484,10 +535,10 @@ h1, h2, h3, h4, h5, h6, p, span {
   src: url("/fonts/InriaSans-Regular.ttf");
 }
 #process {
-  /* height: 850px; */
+  height: 850px;
   color: #fff;
-  /* width: 100%; */
-  /* min-height: 100vh; */
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }

@@ -39,9 +39,16 @@
                     border: 2px solid $secondary;
                     border-radius: $curve;
                     margin-right: 100px;
-                    padding: 7px 20px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    
                     cursor: pointer;
+                    a {
+                        padding: 7px 20px;
+                    }
                     a:hover {
+                        
                         color: $light;
                     }
                     &:hover {
