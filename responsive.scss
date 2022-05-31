@@ -1,1 +1,48 @@
 @import "variables";
+
+@media screen and (max-aspect-ratio: 10/8) {
+
+    #navbar {
+        .menu {
+            display: block;
+        }
+        .nav {
+            transform: translateX(100vw);
+            background-color: $secondary;
+            width: 100vw;
+            height: calc(100vh - $navBarHeight);
+            left: 0;
+            top: $navBarHeight;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.5s ease-in-out;
+            nav ul{
+                
+                height: calc(100vh - $navBarHeight);
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+                li {
+                    padding: 0;
+                    margin: 0;
+                    text-transform: uppercase;
+                    a {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 1.4rem;
+                    }
+                    &:last-child {
+                        padding: 0;
+                        margin: 0;
+                        a {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -32,7 +32,7 @@ cd Proyecto-Real-PCentriX
 npm install
 ```
 ```
-npm run start
+npm start
 ```
 
 [Volver al índice](#indice)

@@ -8,11 +8,18 @@
     z-index: 5;
     width: 100%;
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
     background-color: $dark; 
     
-
+    .menu {
+        fill: $light;
+        width: 30px;
+        margin-right: 100px;
+        cursor: pointer;
+        display: none;
+    }
     .iconName {
         margin-left: 100px;
         a {

@@ -475,9 +475,17 @@ h1, h2, h3, h4, h5, h6, p, span {
   z-index: 5;
   width: 100%;
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
   background-color: #04110D;
+}
+#navbar .menu {
+  fill: #ffffff;
+  width: 30px;
+  margin-right: 100px;
+  cursor: pointer;
+  display: none;
 }
 #navbar .iconName {
   margin-left: 100px;
@@ -716,6 +724,47 @@ h1, h2, h3, h4, h5, h6, p, span {
 @font-face {
   font-family: "Inria Sans";
   src: url("/fonts/InriaSans-Regular.ttf");
+}
+@media screen and (max-aspect-ratio: 10/8) {
+  #navbar .menu {
+    display: block;
+  }
+  #navbar .nav {
+    transform: translateX(100vw);
+    background-color: #1A755A;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    left: 0;
+    top: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+  }
+  #navbar .nav nav ul {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+  }
+  #navbar .nav nav ul li {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  #navbar .nav nav ul li a {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  #navbar .nav nav ul li:last-child {
+    padding: 0;
+    margin: 0;
+  }
+  #navbar .nav nav ul li:last-child a {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
