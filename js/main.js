@@ -13,14 +13,17 @@ menu.addEventListener('click', () => {
     }
 })
 
-links.forEach( link => {
-    link.addEventListener('click', () => {
-        if (active === true) {
-            linksPage.style.transform = 'translateX(100vw)'
-            active = false
-        } else {
-            linksPage.style.transform = 'translateX(0vw)'
-            active = true
-        }
-    })
-});
+if (window.matchMedia("(max-aspect-ratio: 10/8)").matches) {
+    links.forEach( link => {
+        link.addEventListener('click', () => {
+            if (active === true) {
+                linksPage.style.transform = 'translateX(100vw)'
+                active = false
+            } else {
+                linksPage.style.transform = 'translateX(0vw)'
+                active = true
+            }
+        })
+    });
+}
+
